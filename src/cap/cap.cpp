@@ -56,6 +56,26 @@ void generate_CAP_XML_MSG(char *xml_msg_string, String identifier, String timest
         "<value>%s</value>"
         "</parameter>"
 
+        "<parameter>"
+        "<valueName>temprature_sd</valueName>"
+        "<value>%s</value>"
+        "</parameter>"
+
+        "<parameter>"
+        "<valueName>humidity_sd</valueName>"
+        "<value>%s</value>"
+        "</parameter>"
+
+        "<parameter>"
+        "<valueName>pressure_sd</valueName>"
+        "<value>%s</value>"
+        "</parameter>"
+
+        "<parameter>"
+        "<valueName>lightIntensity_sd</valueName>"
+        "<value>%s</value>"
+        "</parameter>"
+
 
         "<area>"
         "<areaDesc>36, WENNAWATTE, WELLAMPITIYA, COLOMBO, WESTERN, SRI LANKA</areaDesc>"

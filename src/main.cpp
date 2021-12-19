@@ -50,8 +50,7 @@ String temprature_text = "";
 String humidity_text = "";
 String pressure_text = "";
 String light_intensity_text = "";
-String text4 = "";
-String text5 = "";
+String e_msg = "";
 String server_status = "";
 String wifi_status = "";
 
@@ -63,8 +62,7 @@ void displayTextinOLED()
   display.println(humidity_text);
   display.println(pressure_text);
   display.println(light_intensity_text);
-  display.println(text4);
-  display.println(text5);
+  display.println(e_msg);
   display.println(server_status);
   display.println(wifi_status);
   display.display();
@@ -251,7 +249,7 @@ void loop()
     humidity_reading[x] = readHumidity();
     pressure_reading[x] = readPressure();
     light_intensity_reading[x] = readLight();
-    text5 = edit_message_string;
+    e_msg = edit_message_string;
     displayTextinOLED();
     delay(round_time);
     x++;
